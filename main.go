@@ -7,5 +7,5 @@ import (
 
 func main() {
 	fmt.Println("hello world!")
-	fmt.Printf("result: %v", solution.DifferenceOfSums(10, 3))
+	fmt.Printf("result: %v", solution.MaximumValue([]string{"alic3", "bob", "3", "4", "00000"}))
 }
