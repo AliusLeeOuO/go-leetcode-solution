@@ -25,3 +25,15 @@ func InorderTraversal(root *TreeNode) []int {
 	}
 	return result
 }
+
+//func PreorderTraversal(root *TreeNode) []int {
+//	var res []int
+//	if root == nil {
+//		return res
+//	} else {
+//		res = append(res, PreorderTraversal(root.Left)...)
+//		res = append(res, root.Val)
+//		res = append(res, PreorderTraversal(root.Right)...)
+//	}
+//	return res
+//}
