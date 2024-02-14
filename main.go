@@ -18,7 +18,7 @@ func main() {
 	//}
 	//root := solution.CreateTree(values)
 
-	fmt.Printf("\nresult: %v", solution.FreqAlphabets("1326#"))
+	fmt.Printf("\nresult: %v", solution.SupplyWagon([]int{7, 3, 6, 1, 8}))
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 1, 5, 4, 2}, 5))
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 2, 5, 3, 1}, 3))
 }

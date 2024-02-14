@@ -1,24 +1,19 @@
 package solution
 
-func LevelOrder(root *TreeNode) [][]int {
+func LevelOrderBottom(root *TreeNode) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
-	// 结果集
-	var res = make([][]int, 0)
-	// 创建一个队列，用于遍历，将root入队
+	var res [][]int
 	var queue = []*TreeNode{root}
-	// 循环出队
 	for len(queue) > 0 {
+		var currentSize = len(queue)
 		var buffer []int
-		// 当前层的节点数
-		var levelSize = len(queue)
-		for i := 0; i < levelSize; i++ {
-			// 出队操作
+		for i := 0; i < currentSize; i++ {
+			// 将节点出队，并加入缓冲区
 			current := queue[0]
 			queue = queue[1:]
 			buffer = append(buffer, current.Val)
-			// 将子节点入队
 			if current.Left != nil {
 				queue = append(queue, current.Left)
 			}
@@ -26,7 +21,8 @@ func LevelOrder(root *TreeNode) [][]int {
 				queue = append(queue, current.Right)
 			}
 		}
-		res = append(res, buffer)
+		// 将缓冲区加入结果集，从头部添加符合题目要求
+		res = append([][]int{buffer}, res...)
 	}
 	return res
 }
