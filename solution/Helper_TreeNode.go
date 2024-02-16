@@ -8,6 +8,11 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+type Node struct {
+	Val      int
+	Children []*Node
+}
+
 // CreateTree 根据层序遍历的节点值列表创建二叉树，nil表示空节点
 func CreateTree(values []*int) *TreeNode {
 	if len(values) == 0 || values[0] == nil {

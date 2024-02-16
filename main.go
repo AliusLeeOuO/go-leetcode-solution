@@ -17,8 +17,7 @@ func main() {
 	//	solution.NewInt(7),
 	//}
 	//root := solution.CreateTree(values)
-
-	fmt.Printf("\nresult: %v", solution.SortArrayByParityII([]int{4, 2, 5, 7}))
+	fmt.Printf("\nresult: %v", solution.HammingWeight(4294967293))
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 1, 5, 4, 2}, 5))
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 2, 5, 3, 1}, 3))
 }
