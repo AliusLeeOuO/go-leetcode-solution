@@ -17,7 +17,7 @@ func main() {
 	//	solution.NewInt(7),
 	//}
 	//root := solution.CreateTree(values)
-	fmt.Printf("\nresult: %v", solution.HammingWeight(4294967293))
+	fmt.Printf("\nresult: %v", solution.MakeEqual([]string{"caaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaa", "a", "aaa", "aa", "aa", "aa", "a", "bbbbbbbbbb", "bbbb", "b", "cccccc", "ccc", "c", "cccc"}))
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 1, 5, 4, 2}, 5))
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 2, 5, 3, 1}, 3))
 }
