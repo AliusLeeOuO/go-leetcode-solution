@@ -29,7 +29,7 @@ func main() {
 	//	solution.NewInt(10),
 	//}
 	//root := solution.CreateTree(values)
-
-	fmt.Printf("\nresult: %v", solution.BuildTree([]int{3, 9, 20, 15, 7}, []int{9, 3, 15, 20, 7}))
+	var a = solution.ConstructFromPrePost([]int{1, 2, 4, 5, 3, 6, 7}, []int{4, 5, 2, 6, 7, 3, 1})
+	fmt.Printf("\nresult: %v", a)
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 2, 5, 3, 1}, 3))
 }

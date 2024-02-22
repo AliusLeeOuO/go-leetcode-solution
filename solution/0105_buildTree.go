@@ -1,6 +1,6 @@
 package solution
 
-func BuildTree(preorder []int, inorder []int) *TreeNode {
+func BuildTree0105(preorder []int, inorder []int) *TreeNode {
 	if len(preorder) == 0 {
 		return nil
 	}
@@ -26,7 +26,7 @@ func BuildTree(preorder []int, inorder []int) *TreeNode {
 	// build 左子树先序遍历
 	leftPreOrder := preorder[1 : i+1]
 	rightPreOrder := preorder[i+1:]
-	rootTree.Left = BuildTree(leftPreOrder, inorder[:i])
-	rootTree.Right = BuildTree(rightPreOrder, inorder[i+1:])
+	rootTree.Left = BuildTree0105(leftPreOrder, inorder[:i])
+	rootTree.Right = BuildTree0105(rightPreOrder, inorder[i+1:])
 	return rootTree
 }
