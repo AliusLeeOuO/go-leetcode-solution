@@ -17,7 +17,7 @@ func main() {
 		solution.NewInt(7),
 	}
 	root := solution.CreateTree(values)
-	var a = solution.KthLargestLevelSum(root, 4)
+	var a = solution.ClosestNodes(root, []int{2, 5, 16})
 	fmt.Printf("\nresult: %v", a)
 	//fmt.Printf("\nresult: %v", solution.MinOperations([]int{3, 2, 5, 3, 1}, 3))
 }

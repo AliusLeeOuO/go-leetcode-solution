@@ -25,7 +25,7 @@ func KthLargestLevelSum(root *TreeNode, k int) int64 {
 	}
 	sort.Ints(c)
 	if len(c)-k < 0 {
-		return 0
+		return -1
 	}
 	return int64(c[len(c)-k])
 }
